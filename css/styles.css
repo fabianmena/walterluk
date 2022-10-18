@@ -1,0 +1,390 @@
+*{
+    margin: 0px;/*margen ext*/
+    padding:0px;/*margen interno*/
+}
+
+body{
+    margin: 10px;
+    background-color: #110c0e;
+    
+}
+
+    
+.caja__flex {
+    display: flex ;
+    border: solid black;
+
+}
+.items{
+    height: 100px;
+}    
+.logo{
+    height: 200PX;
+    width: 100%;
+}  
+/* estiky de nav de index */ 
+.estiky{
+    height: 70px;
+    padding: 30px;
+    margin: 2px;
+}   
+    /* clase para img de carrousel */
+    
+.anchalt{
+    
+    height: 350px;
+}
+
+                                                     /* revisar para que modifique maps contacto */
+.mapacon .mapcontacto {
+    max-width:240px;
+        max-height: 350px;
+        border-radius: 10%;
+        text-align: center;
+        justify-content: center;
+}
+h2 .h2cont{
+    background-color: white;
+}
+/* boton wasap */
+
+.container-boton{
+    background-color: #111013;
+    border: 1px solid rgb(50, 154, 55);
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+.container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.boton{
+    width: 80px;
+    transition: ease 1s;
+}
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(21, 90, 20, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(209, 17, 17, 0);
+    }
+}
+                                /*footer flex  */
+.footer{
+    display: flex;
+    border: solid black 2px;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_nav{
+    width: 320px;
+    height: 270px;
+    border: green 2px solid;
+    
+}
+
+
+.footer_redes {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    width: 320px;
+    height: 270px;
+    border: green 2px solid;
+}
+                        .footer_redes1 img{
+                            
+                            width: 50px;
+                            height: 50px;
+                            margin: 20px;
+                        }
+                        .footer_redes2 img{
+                            width: 50px;
+                            height: 50px;
+                        margin: 20px;
+                        }
+                        .footer_redes3 img{
+                            width: 50px;
+                            height: 50px;
+                            margin: 20px;
+                        }
+
+
+.footer_info{
+    width: 320px;
+    height: 270px;
+    border: green 2px solid;
+    
+}
+                                                    /* acordeon de servicios.html */
+.img_acor {
+    height: 400px;
+    width: 700px;
+}
+                                                    /* footer footer */
+
+.pie-pagina{
+    width: 98%;
+    height: auto;
+    background-color: #110c0e;
+    margin: 10px;
+
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: rgb(212, 128, 134);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+    color: rgb(217, 212, 212);
+    margin-bottom: 10px;
+
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: rgb(228, 236, 228);
+    margin-right: 10px;
+    background-color: rgb(140, 206, 147);
+    text-align: center;
+    border-radius: 50%;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: rgb(44, 11, 235);
+
+}
+.pie-pagina .grupo-2{
+    background-color: #45304e;
+    padding: 5px 10px;
+    text-align: center;
+    color: white;
+}
+
+
+                                            /*media para tablet  */
+
+@media screen and (max-width: 7680px) {
+    
+    body{
+        background-color: rgb(205, 38, 155);
+    }
+
+}
+
+
+
+
+/* mediaquery para celular */
+@media screen and (max-width: 360px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+    body{
+        
+        background-color: rgb(10, 17, 17);
+        margin: 0%;
+        padding: 0%;
+        height: 100%;
+    }
+    .logo {
+        width: 240px;
+        height: 90px;
+    } 
+    .img {
+        width: 220px;
+        height: 90px;
+    }
+    .img_asremota{
+        width: 240px;
+        height: 300px;
+    }
+             /* ancho img carrousel */
+    .anchalt{
+        height: 400px;
+        
+    }
+
+    /* tarjeta dl footer */
+    .pie-pagina .grupo-1 .box figure img{
+        display: inline-block;
+        text-align: center;
+        width: 80%;
+    }
+    /* maps footer */
+    .pie-pagina .grupo-1  .box .maps_footer{
+        width: 220px;
+        height: 300px;
+        border-radius: 10%;
+    }
+    /* img como comenzo */
+    .comocomenzo{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        
+    }
+    .comocomenzo__img img {
+        
+        max-width:240px;
+        max-height: 350px;
+        border-radius: 10%;
+        text-align: center;
+        justify-content: center;
+    }
+
+                /*boton styky wasap  */
+    .container-boton{
+        background-color: #111013;
+        border: 1px solid rgb(50, 154, 55);
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 10px;
+        right: 20px;
+        padding: 10px;
+        transition: ease 0.3s;
+        animation: efecto 1.2s infinite;
+    }
+    .container-boton:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    .boton{
+        width: 40px;
+        transition: ease 1s;
+    }
+    .fotopre {
+        max-width:240px;
+        max-height: 350px;
+        border-radius: 10%;
+        text-align: center;
+        justify-content: center;
+    }
+    .fotoprep {
+        max-width:240px;
+        max-height: 350px;
+        border-radius: 10%;
+        text-align: center;
+        justify-content: center;
+    }
+    .fotoser {
+        max-width:240px;
+        max-height: 350px;
+        border-radius: 10%;
+        text-align: center;
+        justify-content: center;
+    }
+
+                                                    /*----revisar que no achica el mapa de google de contactos  */
+    .mapacon .mapcontacto {
+        max-width:240px;
+            max-height: 350px;
+            border-radius: 10%;
+            text-align: center;
+            justify-content: center;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /* estilos a letras o founds */
+.titulos{
+    color: white;
+    text-align: center;
+}
+.sub_titulos {
+    color: white;
+}
+p {
+    color: white;
+}
+.maps {
+    display:inline-block;
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+}
+.maps_footer {
+    width: 300px;
+    height: 200px;
+    
+}
+                /* estilos a mapa de contactos */
+
+.map {
+    display: flex;
+    width: 550px;
+    margin: 10px;
+}
+.texto{
+    background-color:black;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 30px;
+} 
+.comocomenzo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    flex-direction: row-reverse
+    ;
+}
+
+.comocomenzo__img img {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+}
+.comocomenzo__txt {
+    width: 350px;
+}
+
+/* imgens de preguntas frecuentes */
+
